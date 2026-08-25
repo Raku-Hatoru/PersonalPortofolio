@@ -1,0 +1,44 @@
+:root {
+    --bg-utama: #0a0118;
+    --font-utama: #b9b6b6;
+    --nuansa-satu: #9333ea;
+    --nuansa-dua: #38bdf8;
+
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-utama);
+    color: var(--font-utama);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+
+
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+        display: grid;
+    }
+}
+
+h1 {
+    background: linear-gradient(180deg, var(--nuansa-satu), var(--nuansa-dua));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+a {
+    color: var(--nuansa-dua);
+}
+
+a:hover {
+    color: var(--nuansa-satu);
+}
