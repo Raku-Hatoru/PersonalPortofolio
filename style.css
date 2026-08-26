@@ -13,7 +13,7 @@ body {
 }
 
 nav ul {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     list-style: none;
@@ -23,8 +23,8 @@ nav ul {
 }
 
 @media screen and (min-width: 768px) {
-    nav {
-        display: grid;
+    nav ul {
+        display: flex;
     }
 }
 
@@ -41,4 +41,20 @@ a {
 
 a:hover {
     color: var(--nuansa-satu);
+}
+
+#project {
+    display: grid;
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 2rem;
+
+}
+
+@media screen and (min-width: 768px) {
+    #project {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
